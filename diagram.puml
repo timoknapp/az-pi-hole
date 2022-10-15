@@ -1,11 +1,4 @@
-# az-pi-hole
-Running Pi-Hole on Azure
-
-
-![alt text](./img/diagram.jpg)
-
-<!-- ```plantuml
-@startuml
+@startuml diagram
 
 !define C4Puml https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master
 !define AzurePuml https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/master/dist
@@ -26,9 +19,9 @@ Running Pi-Hole on Azure
 
 'left to right direction
 
-title Example Multi Cloud PlantUML C4 Diagram
+title Pi-Hole DNS running on Microsoft Azure
 
-AzureVirtualMachine(client,"client","")
+Person(client,"client")
 Boundary(azure,"subscription") {
 	Boundary(azurerg,"rg-phdns-westeu") {
 		Boundary(azurevn,"vnet-westeu", "10.1.0.0/16") {
@@ -57,4 +50,3 @@ Rel_R(alb, dns2, " ")
 
 
 @enduml
-``` -->
